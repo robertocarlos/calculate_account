@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "calculate_account"
+
+puts CalculateAccount::Command.new.run(ARGV[0], ARGV[1])
